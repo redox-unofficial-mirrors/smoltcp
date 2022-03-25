@@ -166,7 +166,7 @@ pub struct ChecksumCapabilities {
     pub icmpv4: Checksum,
     #[cfg(feature = "proto-ipv6")]
     pub icmpv6: Checksum,
-    dummy: (),
+    _dummy: (),
 }
 
 impl ChecksumCapabilities {
@@ -214,7 +214,7 @@ pub struct DeviceCapabilities {
 
     /// Only present to prevent people from trying to initialize every field of DeviceLimits,
     /// which would not let us add new fields in the future.
-    dummy: ()
+    _dummy: ()
 }
 
 /// An interface for sending and receiving raw network frames.
